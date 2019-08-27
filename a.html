@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<title>calci</title>
+	<script type="text/javascript" src="a.js">
+		
+	</script>
+</head>
+<body>
+	<div style="text-align: center;" >
+		<b><h1 style="color: red;">C A L C U L A T O R</h1></b>
+	</div>
+	<div class="container" style="align:center;">
+	<div class="row mt-5">
+	<div class="col-3">
+		<input type="text" class="form-control" id="fno" placeholder="Enter First Number" onfocus="selectinput('fno')" name="value1" value="" />
+ 	</div>
+ 	<div class="col-3">
+		<input type="text" class="form-control" id="sno" placeholder="Enter Second Number" onfocus="selectinput('sno')" name="value2" value="" />
+ 	</div>
+ 	<div class="col-3">
+		<input type="text" class="form-control" id="result" placeholder="Result" name="result" />
+ 	</div>
+    </div>
+
+<div class="col mt-5 mx-auto">
+	<div class="col mx-auto">
+	<table>				
+		<tr>
+			<td><button type="button" class="btn btn-primary" value="1" onclick="num('1')">1</button></td>
+			<td><button type="button" class="btn btn-primary" value="2" onclick="num('2')">2</button></td>
+			<td><button type="button" class="btn btn-primary" value="3" onclick="num('3')">3</button></td>
+			<td><button type="button" class="btn btn-warning" value="/" onclick="div()">/</button></td>
+		</tr>
+		<tr>
+			<td><button type="button" class="btn btn-primary" value="4" onclick="num('4')">4</button></td>
+			<td><button type="button" class="btn btn-primary" value="5" onclick="num('5')">5</button></td>
+			<td><button type="button" class="btn btn-primary" value="6" onclick="num('6')">6</button></td>
+			<td><button type="button" class="btn btn-warning" value="-" onclick="sub()">-</button></td>
+		</tr>
+		<tr>
+			<td><button type="button" class="btn btn-primary" value="7" onclick="num('7')">7</button></td>
+			<td><button type="button" class="btn btn-primary" value="8" onclick="num('8')">8</button></td>
+			<td><button type="button" class="btn btn-primary" value="9" onclick="num('9')">9</button></td>
+			<td><button type="button" class="btn btn-warning" value="*" onclick="mul()">*</button></td>
+		</tr>
+		<tr>
+			<td><button type="button" class="btn btn-primary" value="0" onclick="num('0')">0</button></td>
+			<td><button type="button" class="btn btn-primary" value="." onclick="num('.')">&nbsp;.&nbsp;</button></td>
+			<td><button type="button" class="btn btn-primary" value="00" onclick="num('00')">00</button></td>
+			<td><button type="button" class="btn btn-warning"  onclick="add()">+</button></td>
+		</tr>
+		
+	</table>
+	<div class="col mt-1">
+			<button type="button" class="btn btn-dark"  onclick="document.getElementById('fno').value = '';">Reset1</button>
+			<button type="button" class="btn btn-dark"  onclick="document.getElementById('sno').value = '';">Reset2</button><br/>
+			<br/>
+			<button type="button" class="btn btn-danger"  onclick="document.getElementById('result').value = '';">Reset result</button>
+</div>
+		
+	</div>
+</div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+</body>
+</html>
