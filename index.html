@@ -14,20 +14,20 @@
 	</div>
 	<div class="container" style="align:center;">
 	<div class="row mt-5">
-	<div class="col-3">
+	<div class="mx-auto">
 		<input type="text" class="form-control" id="fno" placeholder="Enter First Number" onfocus="selectinput('fno')" name="value1" value="" />
  	</div>
- 	<div class="col-3">
+ 	<div class="mx-auto">
 		<input type="text" class="form-control" id="sno" placeholder="Enter Second Number" onfocus="selectinput('sno')" name="value2" value="" />
  	</div>
- 	<div class="col-3">
+ 	<div class="mx-auto">
 		<input type="text" class="form-control" id="result" placeholder="Result" name="result" />
  	</div>
     </div>
 
-<div class="col mt-5 mx-auto">
+
 	<div class="col mx-auto">
-	<table>				
+	<table class="mx-auto mt-2">				
 		<tr>
 			<td><button type="button" class="btn btn-primary" value="1" onclick="num('1')">1</button></td>
 			<td><button type="button" class="btn btn-primary" value="2" onclick="num('2')">2</button></td>
@@ -54,14 +54,20 @@
 		</tr>
 		
 	</table>
-	<div class="col mt-1">
+	<div class="row mt-2">
+	<div class="mx-auto">
 			<button type="button" class="btn btn-dark"  onclick="document.getElementById('fno').value = '';">Reset1</button>
-			<button type="button" class="btn btn-dark"  onclick="document.getElementById('sno').value = '';">Reset2</button><br/>
-			<br/>
+	</div>
+	<div class="mx-auto">
+			<button type="button" class="btn btn-dark"  onclick="document.getElementById('sno').value = '';">Reset2</button>
+	</div>
+	<div class="mx-auto">
 			<button type="button" class="btn btn-danger"  onclick="document.getElementById('result').value = '';">Reset result</button>
+		</div>
+</div>
 </div>
 		
-	</div>
+
 </div>
 </div>
 
