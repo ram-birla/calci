@@ -50,18 +50,25 @@
 		</tr>
 		<tr>
 			<td><button type="button" class="btn btn-primary" value="0" onclick="num('0')">0</button></td>
-			<td><button type="button" class="btn btn-primary" value="." onclick="num('.')">&nbsp;.&nbsp;</button></td>
-			<td><button type="button" class="btn btn-primary" value="00" onclick="num('00')">00</button></td>
+			<td><button type="button" class="btn btn-primary" value="." onclick="num('.')">.&nbsp;</button></td>
+			<td><button type="button" class="btn btn-warning" value="%" onclick="per()">%</button></td>
 			<td><button type="button" class="btn btn-warning"  onclick="add()">+</button></td>
 		</tr>
 		
+
+		
+	</table>
+	<table class="mx-auto mt-2">
+		<tr>
+			<td><button type="button" class="btn btn-primary" value="2" onclick="square()">x^2</button></td>
+			<td><button type="button" class="btn btn-primary" value="3" onclick="cube()">x^3</button></td>
+			<td><button type="button" class="btn btn-danger"  onclick="backSpace()"><-</button></td>
+		</tr>
 	</table>
 	<div class="row mt-2">
+	
 	<div class="mx-auto">
-			<button type="button" class="btn btn-dark"  onclick="document.getElementById('fno').value = '';">Reset1</button>
-	</div>
-	<div class="mx-auto">
-			<button type="button" class="btn btn-dark"  onclick="document.getElementById('sno').value = '';">Reset2</button>
+			<button type="button" class="btn btn-dark"  onclick="reset()">Reset</button>
 	</div>
 	<div class="mx-auto">
 			<button type="button" class="btn btn-danger"  onclick="document.getElementById('result').value = '';">Reset result</button>
